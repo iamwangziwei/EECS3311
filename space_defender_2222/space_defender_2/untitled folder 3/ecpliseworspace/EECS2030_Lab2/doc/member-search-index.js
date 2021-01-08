@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"eecs2030.lab2","c":"Nickel","l":"CENTS"},{"p":"eecs2030.lab2","c":"Nickel","l":"compareTo(Nickel)","url":"compareTo(eecs2030.lab2.Nickel)"},{"p":"eecs2030.lab2","c":"Nickel","l":"issueYear()"},{"p":"eecs2030.lab2","c":"Nickel","l":"Nickel(int)","url":"%3Cinit%3E(int)"}]

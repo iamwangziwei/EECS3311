@@ -1,0 +1,71 @@
+Single rotation - Right
+Test case 1a:
+Preorder : 40 30 50 
+Postorder: 30 50 40 
+
+Test case 1b:
+Preorder : 40 30 60 50 70 
+Postorder: 30 50 70 60 40 
+
+Test case 1c:
+Preorder : 60 40 30 50 70 80 
+Postorder: 30 50 40 80 70 60 
+
+Test case 1d:
+Preorder : 60 40 30 50 80 70 90 
+Postorder: 30 50 40 70 90 80 60 
+
+---------------------------
+Single rotation - Left
+Test case 2a:
+Preorder : 80 70 90 
+Postorder: 70 90 80 
+
+Test case 2b:
+Preorder : 80 60 50 70 90 
+Postorder: 50 70 60 90 80 
+
+Test case 2c:
+Preorder : 60 50 40 80 70 90 
+Postorder: 40 50 70 90 80 60 
+
+Test case 2d:
+Preorder : 60 40 30 50 80 70 90 
+Postorder: 30 50 40 70 90 80 60 
+
+---------------------------
+Double rotation >
+Test case 3a:
+Preorder : 35 30 40 
+Postorder: 30 40 35 
+
+Test case 3b:
+Preorder : 35 30 45 40 50 
+Postorder: 30 40 50 45 35 
+
+Test case 3c:
+Preorder : 40 35 30 38 45 50 
+Postorder: 30 38 35 50 45 40 
+
+Test case 3d:
+Preorder : 40 35 30 38 48 45 50 
+Postorder: 30 38 35 45 50 48 40 
+
+---------------------------
+Double rotation <
+Test case 4a:
+Preorder : 45 40 50 
+Postorder: 40 50 45 
+
+Test case 4b:
+Preorder : 45 35 30 40 50 
+Postorder: 30 40 35 50 45 
+
+Test case 4c:
+Preorder : 40 35 30 45 42 50 
+Postorder: 30 35 42 50 45 40 
+
+Test case 4d:
+Preorder : 40 32 30 35 45 42 50 
+Postorder: 30 35 32 42 50 45 40 
+

@@ -1,0 +1,3130 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://lassondecoop.com/myAccount/coop-postings.htm -->
+<html lang="en-CA"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+
+  
+ 
+  
+
+ 
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+<link rel="icon" href="https://lassondecoop.com/site/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="https://lassondecoop.com/site/images/favicon.ico" type="image/x-icon">
+
+<link href="./Lassonde School of Engineering - MyAccount - Jobs_files/bootstrap.min-224.css" rel="stylesheet" type="text/css">
+<link href="./Lassonde School of Engineering - MyAccount - Jobs_files/bootstrap-responsive.min-224.css" rel="stylesheet" type="text/css">
+<link href="./Lassonde School of Engineering - MyAccount - Jobs_files/bootstrap-modal-225.css" rel="stylesheet" type="text/css">
+<link href="./Lassonde School of Engineering - MyAccount - Jobs_files/font-awesome.min-224.css" rel="stylesheet" type="text/css">
+<link href="./Lassonde School of Engineering - MyAccount - Jobs_files/jquery-ui-1.10.0.custom.css" rel="stylesheet" type="text/css">
+<link href="./Lassonde School of Engineering - MyAccount - Jobs_files/bootstrap.mods-236.css" rel="stylesheet" type="text/css">
+<link href="./Lassonde School of Engineering - MyAccount - Jobs_files/icon" rel="stylesheet">
+
+
+
+
+
+<link href="./Lassonde School of Engineering - MyAccount - Jobs_files/core-227.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="./Lassonde School of Engineering - MyAccount - Jobs_files/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="./Lassonde School of Engineering - MyAccount - Jobs_files/jquery-ui-1.10.2.custom.min.js"></script>
+<script type="text/javascript" src="./Lassonde School of Engineering - MyAccount - Jobs_files/bootstrap.min-224.js"></script>
+<script type="text/javascript" src="./Lassonde School of Engineering - MyAccount - Jobs_files/bootstrap-modalmanager-225.js"></script>
+<script type="text/javascript" src="./Lassonde School of Engineering - MyAccount - Jobs_files/bootstrap-modal-225.js"></script>
+<script type="text/javascript" src="./Lassonde School of Engineering - MyAccount - Jobs_files/ckeditor.js"></script><style>.cke{visibility:hidden;}</style>
+<script type="text/javascript" src="./Lassonde School of Engineering - MyAccount - Jobs_files/jquery-225.js"></script> 
+<script type="text/javascript" src="./Lassonde School of Engineering - MyAccount - Jobs_files/ckfinder.js"></script>
+<script type="text/javascript">
+	var orbisLocale = "en";
+	var i18n = {
+		i14581551: "Are you sure you want to delete this task?",
+		i55453541: "Are you sure you want to delete this note?",
+		i34534531: "Are you sure you want to delete this time-slot?",
+		i98413981: "deleteInterviewer - unsuccessful",
+		i74513741: "ERROR",
+		i882266335: "Delete this time-slot",
+		i909878654: "Delete this interviewer",
+		u876543678: "Edit this interviewer",
+		x894392000: "Add day for this interviewer",
+		d888987896: "Are you sure you want to delete this Interviewer?",
+		u71664225: "Delete this group?",
+		s60971652: "Could not add new group - invalid parameters.",
+		a05352565: "ERROR",
+		d76200733: "Columns",
+		w73107591: "Reorder Columns",
+		l43035401: "View Details",
+		q40274238: "View More Details",
+		i74855411: "No Restrictions.",
+		a40369725: "SELECT ALL",
+		c53266207: "There has been a communication error with the server(1).  Please try again.",
+		g92510331: "There has been a communication error with the server(2).  Please try again.",
+		x410443028: "There has been a communication error with the server(3).  Please try again.",
+		o312666927: "Alert",
+		e037553076: "Please Wait...",
+		h17743726: "Are you sure?",
+		m536012143: "MAX CHARS",
+		w24268703: "CHARS REMAINING",
+		u93742358: "You have inputed incorrect parameters within the checkboxWidget plugin.",
+		j07234968: "Fetching news feed",
+		i413033843: "News feed unavailable!",
+		s55118689: "Click here for more information",
+		q8366135: "OK",
+		n968294344: "Confirmation",
+		cl1723834: "Close",
+		z121936338: "Cancel",
+		i56321831: "Save",
+		i59165711: "Delete"
+	}
+</script>
+<script type="text/javascript" src="./Lassonde School of Engineering - MyAccount - Jobs_files/orbis-237.js"></script>
+<script type="text/javascript" src="./Lassonde School of Engineering - MyAccount - Jobs_files/switcher-224.js"></script>
+
+
+	</head><body><div id="keepMeLoggedInModal" class="modal hide" data-backdrop="static">
+	<div class="modal-header">
+		<h3>Keep Me Logged In</h3>
+	</div>
+	<div class="modal-body">
+		<table style="width: 100%; height: 100%;">
+			<tbody><tr>
+				<td style="vertical-align: middle; text-align: center;">
+					<span id="timeoutMessage" style="color: red; font-size: 20px;">You will be logged out in <span id="secondsLeft">30</span> seconds.</span>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+	<div class="modal-footer">
+		<a href="javascript:void(0)" class="kmliBtn btn btn-primary" onclick="keepMeLoggedInClicked()">Keep Me Logged In</a>
+		<a href="javascript:void(0)" class="closeKmliBtn btn btn-inverse" data-dismiss="modal" style="display:none;">Close</a>
+	</div>
+</div>
+<script type="text/javascript">
+ 	 var stimedout = false;
+ 	 var keepMeLoggedIn;
+	 	if (keepMeLoggedIn == null || keepMeLoggedIn == undefined) {
+	        if (window.XMLHttpRequest) {
+	        	keepMeLoggedIn = new XMLHttpRequest();
+	        }
+	        else if (window.ActiveXObject) {
+	        	keepMeLoggedIn = new ActiveXObject("Microsoft.XMLHTTP");
+	        }
+	 }
+	 keepMeLoggedIn.onreadystatechange = function () { };
+ 	 var interruptTimeout = false;
+ 	 var countdownNum = 29;
+ 	 var countdownInterval;
+ 	 var sessionInterval;
+ 	 
+	 function sessionTimeoutPopup() {
+		 interruptTimeout = false;
+		 beginCountdown();
+		 if (stimedout == false) {
+			 $("#keepMeLoggedInModal").modal("show");
+			 setTimeout ( "sessionTimeoutTimeout()", (30 * 1000));
+		 }
+	 }
+	 
+	 function beginCountdown()
+	 {
+		 countdownInterval = setInterval("countdown()", 1000);
+	 }
+	 
+	 function countdown()
+	 {
+		 $("#secondsLeft").html(countdownNum);
+		 countdownNum--;
+	 }
+	 
+	 function stopCountdown()
+	 {
+		 $("#secondsLeft").html("30");
+		 countdownNum = 29;
+		 clearInterval(countdownInterval);
+	 }
+	 
+	 function gotoMyAccount() {
+		 document.location='/myAccount';
+	 }
+	 
+	 function sessionTimeoutTimeout() {
+	     if (!interruptTimeout) {
+		 	stopCountdown();
+	 		stimedout = true;
+	 		$("span#timeoutMessage").html("Your session has expired. You have been logged out. <br /><a href='/myAccount'>Click here to log in</a>");
+	 		$("a.kmliBtn", "#keepMeLoggedInModal").hide();
+	 		$("a.closeKmliBtn", "#keepMeLoggedInModal").show();
+	 		keepMeLoggedIn.open('post', '/logMeOut.htm');
+		 	keepMeLoggedIn.send(null);
+	     }
+	 }
+	 
+	 function keepMeLoggedInClicked() {
+		 clearInterval(sessionInterval);
+		 
+	 	 keepMeLoggedIn.open('get', '/keepAlive.htm?rand=' + Math.floor(Math.random()*100000));
+	 	 keepMeLoggedIn.send(null);
+	 	
+	 	$("#keepMeLoggedInModal").modal("hide");
+	 	sessionInterval = setInterval ( "sessionTimeoutPopup()", (1769 * 1000));
+	 	stopCountdown();
+	 	interruptTimeout = true;
+	 }
+	 $("#keepMeLoggedInModal").modal("hide");
+	 sessionInterval = setInterval ( "sessionTimeoutPopup()", (1769 * 1000));
+</script>
+
+
+<script type="text/javascript">
+	$.datepicker.setDefaults(orbisApp.defaultDatePickerOpts);
+				
+	$.ajaxPrefilter(function( options, originalOptions, jqXHR ) { 
+		if ( options.dataType == 'script' || originalOptions.dataType == 'script' ) { 
+		    options.cache= true;
+		} 
+	}); 
+</script>
+		<title>Lassonde School of Engineering - MyAccount - Jobs</title>
+		
+	
+	
+
+
+
+
+		
+
+
+
+
+
+
+
+
+  
+ 
+  
+
+ 
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+	<title>Lassonde School of Engineering - MyAccount - Jobs</title>
+	
+
+  
+ 
+  
+
+ 
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+<script type="text/javascript">
+    var shi = "";
+    var alreadyHidden = false;
+    
+    $(document).ready(function() {
+			hideSidebar();
+	});
+    
+    $(window).on("resize", hideSidebar);
+    
+    function hideSidebar()
+    {
+        if($(window).width() <= 767)
+        {
+        	if (!alreadyHidden)
+        	{
+	            alreadyHidden = true;
+				toggleFullScreenModee();
+        	}
+        }
+        else if (alreadyHidden)
+        {
+        	toggleFullScreenModee();
+       	}
+        else if ($('#sideHorizMenuDiv1').length == 1)
+        {
+        	shi = document.getElementById('sideHorizMenuDiv1').innerHTML;
+			$('#sideHorizMenuDiv1').remove();
+       	}
+    }
+    
+	function toggleFullScreenModee()
+	{
+		if ($(window).width() > 767)
+		{
+			alreadyHidden = false;
+		}
+		if (!alreadyHidden)
+		{
+			// mobile display to desktop display open menu
+			if ($('#sideHorizMenuDiv1').length == 1)
+			{
+				shi = document.getElementById('sideHorizMenuDiv1').innerHTML;
+				$('#sideHorizMenuDiv1').remove();
+				$('<div id="sideHorizMenuDiv" class="span2"></div>').prependTo("div#mainMainDiv");
+				$('#sideHorizMenuDiv').html(shi);
+				$('#mainContentDiv').removeClass("span12");
+				$('#mainContentDiv').addClass("span10");
+				$('#showHideMenuTagDiv').html('Hide Menu');
+			}
+			// desktop display open menu to desktop display closed menu
+			else if ($('#sideHorizMenuDiv').length == 1)
+			{
+				shi = document.getElementById('sideHorizMenuDiv').innerHTML;
+				$('#sideHorizMenuDiv').remove();
+				$('#mainContentDiv').removeClass("span10");
+				$('#mainContentDiv').addClass("span12");
+				$('#showHideMenuTagDiv').html('Show Menu');
+			}
+			// desktop display closed menu to desktop display open menu
+			else
+			{
+				$('<div id="sideHorizMenuDiv" class="span2"></div>').prependTo("div#mainMainDiv");
+				$('#sideHorizMenuDiv').html(shi);
+				$('#mainContentDiv').removeClass("span12");
+				$('#mainContentDiv').addClass("span10");
+				$('#showHideMenuTagDiv').html('Hide Menu');
+			}
+		}
+		else
+		{
+			// desktop display open menu to mobile display
+			if ($('#sideHorizMenuDiv').length == 1)
+			{
+				shi = document.getElementById('sideHorizMenuDiv').innerHTML;
+				$('#sideHorizMenuDiv').remove();
+				$('#mainContentDiv').removeClass("span10");
+				$('#mainContentDiv').addClass("span12");
+				$('#showHideMenuTagDiv').html('Show Menu');
+				$('<div id="sideHorizMenuDiv1"></div>').prependTo("div#navbarForSideMenu");
+				$('#sideHorizMenuDiv1').html(shi);
+			}
+			// desktop display closed menu to mobile display
+			else if ($('#sideHorizMenuDiv1').length == 0)
+			{
+				$('<div id="sideHorizMenuDiv1"></div>').prependTo("div#navbarForSideMenu");
+				$('#sideHorizMenuDiv1').html(shi);
+			}
+		}
+		$.post("/myAccount/coop-postings.htm", {
+			action : "toggleFullScreenMode",
+			menu: shi
+		});
+	}
+</script>
+
+
+	<style>
+		.sectionRow {
+background-color: #ffffff;
+}
+
+.headerBackground {
+background-color: #ffffff;
+background-image: none;
+}
+.sectionRow .nav-tabs>li>a {
+
+background: none repeat scroll 0 0 #ffffff;
+}
+
+.sectionRow .nav-tabs>li>a {
+
+color: #000;
+}
+
+.account-name  {
+color: #fff;
+}
+
+.navbar-inverse .navbar-inner {
+
+background-color: #ffffff;
+background-image: none;
+border-color: #DEDEDE;
+}
+.navbar-inverse .nav .active>a, .navbar-inverse .nav .active>a:hover, .navbar-inverse .nav .active>a:focus {
+
+color: #000;
+}
+.navbar-inverse .nav>li>a:focus, .navbar-inverse .nav>li>a:hover {
+color: #000;
+background-color: transparent;
+}
+.sectionRow .nav-tabs>.active>a, .header .nav-tabs>.active>a:hover {
+
+-moz-border-bottom-colors: none;
+-moz-border-image: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+-moz-border-top-colors: none;
+background: none;
+background-color: #FFFFFF;
+border-color: #FFFFFF #FFFFFF transparent;
+border-style: solid;
+border-width: 1px;
+cursor: default;
+}
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+
+color: #555;
+text-decoration: none;
+background-color: #DEDEDE;
+-webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,0.125);
+-moz-box-shadow: inset 0 0px 0px rgba(0,0,0,0.125);
+box-shadow: inset 0 0px 0px rgba(0,0,0,0.125);
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+
+html, body { 
+url("http://codepen.io/images/classy_fabric.png"); }
+
+.slides {
+    padding: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+	  opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+	width: 100%;
+	bottom: 9px;
+	height: 11px;
+	display: block;
+	position: absolute;
+	text-align: center;
+}
+
+.nav-dots .nav-dot {
+	top: -5px;
+	width: 11px;
+	height: 11px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+ {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.css-slideshow {
+  position: relative;
+  margin: 0;  
+  width = 100%;
+  max-width: 1200px;
+padding-bottom: 52%
+
+}
+
+.css-slideshow figure {
+  position: absolute;
+  margin: 0;
+  width = 100%;
+  max-width: 1200px;
+padding-bottom: 52%
+  background: #ffffff;
+  position: absolute;
+}
+
+.css-slideshow img {
+  box-shadow: 0 0 0px #666;
+}
+
+.css-slideshow figcaption {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  background: rgba(0, 0, 0, .3);
+  font-size: .8em;
+  padding: 8px 12px;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.css-slideshow:hover figure figcaption {
+  transition: opacity .5s;
+  opacity: 1;
+}
+
+.css-slideshow-attr {
+  max-width: 495px;
+  text-align: right;
+  font-size: .7em;
+  font-style: italic;
+  margin: 0 auto;
+}
+
+.css-slideshow-attr a {
+  color: #666;
+}
+
+.css-slideshow figure {
+  opacity: 0;
+}
+
+figure:nth-child(1) {
+  animation: xfade 24s 18s infinite;
+}
+
+figure:nth-child(2) {
+  animation: xfade 24s 12s infinite;
+}
+
+figure:nth-child(3) {
+  animation: xfade 24s 6s infinite;
+}
+
+figure:nth-child(4) {
+  animation: xfade 24s 0s infinite;
+}
+
+
+
+
+@keyframes xfade {
+  0% {
+    opacity: 1;
+  }
+  27.8% {
+    opacity: 1;
+  }
+ 33.3% {
+    opacity: 0;
+  }
+  94.4% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+
+.postings__header__logo {
+    flex-basis: auto !important;
+    min-width: auto !important;
+    width: auto !important;
+}
+/* This will change the background colour of the campus connect postings header*/
+.postings__header{
+  /* Don't forget to change me */
+    background:#ffffff;
+
+
+	</style>
+	<div class="sectionRow">
+		<div class="container-fluid">
+			
+			<div class="row-fluid">
+				<div class="span6">
+					<div class="sectionRowTitle"><a href="https://lassondecoop.com/home"><img src="./Lassonde School of Engineering - MyAccount - Jobs_files/lassondeLogo.png"></a></div>
+				</div>
+				<div class="span6">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span12">
+				
+
+  
+ 
+  
+
+ 
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+<div class="breadcrumb">
+	<span class="navbar visible-phone">
+		<a class="btn btn-navbar" data-toggle="collapse" data-target="#navbarForSideMenu">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</a>
+	</span>
+	<span class="hidden-phone">
+		<strong>SCREEN OPTIONS:</strong>
+		<span class="orbisFullScreen">
+			<a href="javascript:void(0)" onclick="toggleFullScreenModee();" accesskey="h">
+				<div id="showHideMenuTagDiv">Hide Menu</div>
+			</a> 
+		</span>
+	</span>
+	<strong>YOU ARE HERE:</strong>
+	<ul role="navigation" class="breadcrumb" style="display: inline; padding-left: 5px;">
+		
+			
+			
+			
+		
+			
+			
+			
+				
+				
+					
+					
+						<li class="">
+							
+							
+								
+								
+									<a class="breadCrumbFont" href="https://lassondecoop.com/myAccount.htm">MyAccount</a>										
+								
+							
+						</li>
+					
+					
+					
+									
+			
+		
+			
+			
+			
+				
+				
+					
+					
+						<li class="">
+							<span class="divider">/</span>
+							
+								
+								
+									<a class="breadCrumbFont" href="https://lassondecoop.com/myAccount/coop-postings.htm">Jobs</a>										
+								
+							
+						</li>
+					
+					
+					
+									
+			
+		
+	</ul>
+	<div id="navbarForSideMenu" class="collapse navbar-responsive-collapse row-fluid visible-phone">
+		
+	</div>
+</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span2">
+				<div class="sidebar-nav">
+					
+		
+
+
+
+
+
+
+
+
+  
+ 
+  
+
+ 
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+	<div class="editButtonBox">
+		
+
+  
+ 
+  
+
+ 
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+	
+
+	</div>
+
+
+
+
+
+
+  
+ 
+  
+
+ 
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+	
+
+
+	
+
+
+<ul class="nav nav-list">
+	
+		
+			
+			
+			<li>
+			
+				<a href="https://lassondecoop.com/myAccount/dashboard.htm">Dashboard</a>
+			
+				
+				
+				
+			
+			</li>
+		
+		
+			
+		
+	
+		
+			
+			
+			<li>
+			
+				<a href="https://lassondecoop.com/myAccount/coop.htm">Co-op &amp; Internship</a>
+			
+				
+				
+				
+			
+			</li>
+		
+		
+			
+		
+	
+		
+			
+			<li class="active">
+			
+			
+				<a href="https://lassondecoop.com/myAccount/coop-postings.htm">Jobs</a>
+			
+				
+				
+				
+			
+			</li>
+		
+		
+			
+		
+	
+		
+			
+			
+			<li>
+			
+				<a href="https://lassondecoop.com/myAccount/resources.htm">External Job Postings</a>
+			
+				
+				
+				
+			
+			</li>
+		
+		
+			
+		
+	
+		
+			
+			
+			<li>
+			
+				<a href="https://lassondecoop.com/myAccount/documents.htm">Documents</a>
+			
+				
+				
+				
+			
+			</li>
+		
+		
+			
+		
+	
+		
+			
+			
+			<li>
+			
+				<a href="https://lassondecoop.com/myAccount/coopApplications.htm">Applications</a>
+			
+				
+				
+				
+			
+			</li>
+		
+		
+			
+		
+	
+		
+			
+			
+			<li>
+			
+				<a href="https://lassondecoop.com/myAccount/interviews-co-op.htm">Interviews</a>
+			
+				
+				
+				
+			
+			</li>
+		
+		
+			
+		
+	
+		
+			
+			
+			<li>
+			
+				<a href="https://lassondecoop.com/myAccount/appointments.htm">Appointments</a>
+			
+				
+				
+				
+			
+			</li>
+		
+		
+			
+		
+	
+		
+			
+			
+			<li>
+			
+				<a href="https://lassondecoop.com/myAccount/events.htm">Events / Workshops</a>
+			
+				
+				
+				
+			
+			</li>
+		
+		
+			
+		
+	
+		
+			
+			
+			<li>
+			
+				<a href="https://lassondecoop.com/logout.htm">Logout</a>
+			
+				
+				
+				
+			
+			</li>
+		
+		
+			
+		
+	
+</ul>
+
+
+
+
+				</div>
+			</div>
+			<div class="span10">
+				
+
+
+
+
+		
+
+
+
+
+
+
+<a name="pageContent"></a> <!-- begintext -->
+
+  
+ 
+  
+
+ 
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<style>
+		em {font-weight:normal; padding-right:0px; vertical-align:baseline;}
+		div.modal em {font-weight:bold; padding-right:1em; vertical-align:top;}
+	</style>
+	<script type="text/javascript">
+		var controllerPath = "/myAccount/coop-postings.htm";
+	</script>
+			
+<!-- English or & French  -->
+	
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+<!-- 		 -->
+
+
+
+	
+		
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="alert alert-block"><span style="color:#0000CD;"><strong>**REMINDER:</strong> It’s important to make a great impression. When uploading your application documents on a company’s website&nbsp;(not the portal), ensure you personalize the name of your documents. For example, “Full Name_Job Title &nbsp;OR &nbsp;Full Name_Company Name.**</span></div>
+				</div>
+			</div>
+		
+	
+	
+	
+
+  
+ 
+  
+
+ 
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+<div class="orbisModuleHeader">
+  <div class="row-fluid">
+  	<div class="span2">
+		<div style="text-align: center">
+			<h1>
+				Job ID
+				: 9671
+			</h1>
+		</div>
+	</div>
+	<div class="span7">
+		<h1>
+			2021: Co-op: Computer Science / Engineering / Information Technology
+		</h1>
+		<h5>	
+			
+			Canadian Security Intelligence Service  - Head Office 
+		</h5>
+	</div>
+	<div class="span3">
+		
+		<ul class="pager">
+		
+        <li>
+          <a href="javascript:void(0);" onclick="orbisApp.buildForm({action:&#39;displayHome&#39;}).submit()"><i class="icon-chevron-left"></i>Back to Overview</a>
+        </li>
+        
+        
+        
+      </ul>
+	</div>
+  </div>
+</div>
+	
+	
+	<div class="orbisTabContainer">
+		<div class="tabbable">
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="orbisModuleTabs">
+						
+
+  
+ 
+  
+
+ 
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+	<script type="text/javascript">
+	$(document).ready( function() {
+		orbisApp.startTabLogic("np_postingHeader_user_nav_tabs1");
+	});
+</script>
+
+<div class="row-fluid">
+	<div class="span12">
+		<ul class="nav nav-tabs" id="np_postingHeader_user_nav_tabs1" role="tabList">
+			<li class="active"><a href="javascript:void(0)" onclick="$(&#39;#navToNPForm&#39;).submit();" id="activeTab89305" aria-selected="true" role="tab">Posting Detail </a></li>
+			
+				<li><a href="javascript:void(0)" onclick="orbisApp.buildForm({action:&#39;displayPostingMap&#39;,postingId:&#39;9671&#39;},&#39;/myAccount/coop-postings.htm&#39;).submit()" tabindex="-1" aria-selected="false" role="tab">Map<span class="instruction hidden">(Press enter to load)</span></a>
+				</li>
+			
+			<li><a href="javascript:void(0)" onclick="orbisApp.buildForm({action:&#39;displayApply&#39;,postingId:&#39;9671&#39;}).submit()" tabindex="-1" aria-selected="false" role="tab">Application Information<span class="instruction hidden">(Press enter to load)</span></a></li>
+		<li class="dropdown" style="display: none;"><a class="dropdown-toggle" data-toggle="dropdown" href="https://lassondecoop.com/myAccount/coop-postings.htm#" tabindex="-1" aria-selected="false" role="tab">...<span class="instruction hidden">(Press enter to load)</span></a><ul class="dropdown-menu"></ul></li></ul>
+	</div>
+</div>
+<form enctype="multipart/form-data" id="navToNPForm" action="https://lassondecoop.com/myAccount/coop-postings.htm" method="post">
+	<input type="hidden" name="action" value="displayPosting"> <input type="hidden" name="postingId" value="9671">
+</form>
+
+
+					</div>
+					<div class="tab-content" role="tabpanel" aria-labelledby="activeTab89305">
+						
+						<div class="row-fluid">
+							<div class="span8">
+								
+								
+
+								
+									
+								
+
+								<div id="postingDiv" style="display: ">
+
+									
+
+									
+									
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+									
+										<table class="table table-bordered">
+  <thead>
+    <tr class="orbisTableHeader">
+      <th colspan="2">
+      Job Posting Information
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+   	
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+	<tr>
+ 		<td width="25%">
+			
+			
+				<strong>
+					
+						
+						
+							Term Posted:
+						
+					
+				</strong>
+			
+		</td>
+		<td width="75%">
+	
+			
+			
+				Summer 2020
+			
+			
+			
+			
+			
+
+			
+		</td>
+	</tr>
+
+		
+	
+		
+			
+	<tr>
+ 		<td width="25%">
+			
+			
+				<strong>
+					
+						
+						
+							Position Type:
+						
+					
+				</strong>
+			
+		</td>
+		<td width="75%">
+	
+			
+			
+			
+			
+			
+			
+
+			
+				
+				
+				
+				
+				
+					
+
+
+
+	Co-op / Internship
+
+				
+				
+				
+				
+				
+				
+				
+
+			
+		</td>
+	</tr>
+
+		
+	
+		
+	
+		
+			
+	<tr>
+ 		<td width="25%">
+			
+			
+				<strong>
+					
+						
+						
+							Co-op Job Title:
+						
+					
+				</strong>
+			
+		</td>
+		<td width="75%">
+	
+			
+			
+			
+			
+			
+			
+
+			
+				
+					
+
+
+
+	2021: Co-op: Computer Science / Engineering / Information Technology
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+			
+		</td>
+	</tr>
+
+		
+	
+		
+			
+	<tr>
+ 		<td width="25%">
+			
+			
+				<strong>
+					
+						
+						
+							Job Location:
+						
+					
+				</strong>
+			
+		</td>
+		<td width="75%">
+	
+			
+			
+			
+			
+			
+			
+
+			
+				
+					
+
+
+
+	Various Locations Across Canada
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+			
+		</td>
+	</tr>
+
+		
+	
+		
+			
+	<tr>
+ 		<td width="25%">
+			
+			
+				<strong>
+					
+						
+						
+							Duties and Responsibilities:
+						
+					
+				</strong>
+			
+		</td>
+		<td width="75%">
+	
+			
+			
+			
+			
+			
+			
+
+			
+				
+					
+
+
+
+	<strong><span style="color:#FF0000;">***PLEASE NOTE THIS POSITION BEGINS WINTER 2021. THE EARLY DEADLINE PROVIDES ENOUGH TIME TO OBTAIN THE NECESSARY CLEARANCE***</span><br>
+<br>
+Req ID:&nbsp;</strong><a href="https://www.canada.ca/en/security-intelligence-service/corporate/csis-jobs/student-opportunities/student-co-op-computer-science-engineering-information-technology.html">21-968-COOP-IT-01&#8203;</a><br>
+<br>
+<strong>Job Summary</strong><br>
+<br>
+The Canadian Security Intelligence Service (CSIS) is looking for students who thrive on tackling diverse challenges in a unique environment. You will have the opportunity to contribute and influence projects deliverable that supports the collection, processing, analysis, storage, and safeguarding of CSIS’ classified and unclassified information. You may be exposed to specialized security intelligence related technologies, systems and equipment. Specific duties cannot be divulged during the recruiting process, however they will be unlike any other opportunities out there.&nbsp; If you are up for the challenge and want to join one of our highest performing teams, there is no doubt that your contributions to CSIS will provide a meaningful impact to our mission of helping keep Canadians safe against national security threats.<br>
+CSIS currently offers opportunities for students to gain valuable experience in the following areas:&nbsp;
+<ul>
+	<li>Hands on work experience with projects</li>
+	<li>Teamwork and individual contributions</li>
+	<li>Exposure to knowledgeable and passionate subject matter experts</li>
+	<li>Collaborative work environments</li>
+	<li>Improve your time and project management skills</li>
+	<li>Diverse work force</li>
+</ul>
+<br>
+<strong>Experience</strong><br>
+<br>
+CSIS offers a wide variety of technical opportunities for students with the possibility to return for multiple placements in different areas.&nbsp; Students will be given the opportunity to cultivate their skills and knowledge by being paired with experienced employees who will provide feedback during the work term. They will have the opportunity to broaden your knowledge and experience before choosing a career specialization. &nbsp;The positions available will provide an opportunity to work in one or more of the following fields:<br>
+<br>
+<strong>Software Development</strong>
+
+<ul>
+	<li>Experience with any programming language such as Java and C#, with some Javascript, Python, C/C++ and Go.</li>
+	<li>Perform development and/or integration of software systems using Pega Business Process Management (BPM) rules engine.</li>
+	<li>Build tools, APIs, native or web based frontends.</li>
+	<li>Interact with end users and provide recommendations to improve their user experiences.</li>
+	<li>Participate in designing, programming, testing, documenting and optimizing solutions.</li>
+	<li>Learn best practices through mentorship and code review.</li>
+	<li>Support or modernize legacy applications.</li>
+</ul>
+<br>
+<strong>Networking/Network Engineering/Telecommunications</strong>
+
+<ul>
+	<li>Develop tools for the delivery and processing of telecommunications data.</li>
+	<li>Test and maintain mobile devices using networking protocols and software development tools.</li>
+	<li>Analyze and configure LAN/WAN communications networks and appliances.</li>
+	<li>Maintenance, support and administration of LAN/WAN.</li>
+</ul>
+<br>
+<strong>IT/Network Security</strong>
+
+<ul>
+	<li>Research latest security practices, validate operational tools and make recommendations for improvements to standard practices.</li>
+	<li>Application of network security best practices involving commercial hardware and software.</li>
+	<li>Develop software tools and scripts for system security audits.</li>
+	<li>Assess/provide/use/validate secure network infrastructure for technical solutions to be used operationally.</li>
+	<li>Vulnerability testing of products or software, proof of concepts, refining requirements and conducting research.</li>
+	<li>Installation, configuration and support of security related products.</li>
+	<li>Conduct in depth security assessments such as Statements of Sensitivity (SOS), Security Reviews, Threat and Risk Assessments (TRA) and Certification &amp; Accreditations (C&amp;A) or Security Assessment and Authorization (SA&amp;A).</li>
+</ul>
+<br>
+<strong>IT Infrastructure Support</strong>
+
+<ul>
+	<li>Provide operational infrastructure services that enable the collection of intelligence in order to advance CSIS’ investigations.</li>
+	<li>Create and sustain a centralized operational environment that offers high performance and high speed networks through the development of a core set of services of cost-effective, scalable and adaptive infrastructure.</li>
+	<li>Maintenance, support and administration for elements in an Enterprise environment:&nbsp; Linux/Windows servers, virtualization technologies (VMware, OpenStack); storage technologies (Storage Area Network, Network Attached Storage, backups/restores); identity and access management (LDAP, Active Directory); web infrastructure.</li>
+</ul>
+<br>
+<strong>Specialized Intelligence Collection Systems</strong>
+
+<ul>
+	<li>Validate the functionality of technical solutions to ensure the capabilities will be effective in an operational environment</li>
+	<li>Provide/use/validate secure network infrastructure for technical solutions to be used operationally</li>
+	<li>Investigate, troubleshoot and determine remedial action to issues reported by clients.</li>
+	<li>Configure and deploy various solutions involving networking equipment, computers, software applications and tools</li>
+</ul>
+<br>
+<strong>Embedded Systems Programming/Hardware</strong>
+
+<ul>
+	<li>Work with analog and digital electronic circuits and troubleshooting hardware/software/firmware within embedded systems.</li>
+	<li>Assist with testing and evaluation of systems to ensure they meet their functional and operational requirements.</li>
+	<li>Analyze test results and track issues resolution to ensure that systems can be successfully deployed operationally with high confidence.</li>
+	<li>Experience with microcontroller architecture (Raspberry Pi, Arduino), embedded PC hardware or VME based single board computers, ARM architectures, CAD design tools (Solidworks), FPGA synthesis tools, CNC programming and circuit simulation software.</li>
+</ul>
+<br>
+<strong>Quality Assurance and Testing</strong>
+
+<ul>
+	<li>Data assurance: Work with ensuring data quality in a processing system for collection, organization, filtering, triaging, and reporting of data types collected using various techniques on a big data system in a complex distributed, mission critical system.</li>
+	<li>Assist with testing and evaluation of systems to ensure they meet their user requirements.</li>
+	<li>Coordinate with development and operational teams to identify valuable tests and writing/developing new test cases and participate in continuous improvement testing.</li>
+	<li>Analyze test results and track issues until resolution.</li>
+	<li>Gain experience and exposure to tools and systems that directly support the collection, processing, storage, handling and safeguarding.</li>
+</ul>
+<br>
+<strong>Database Administration</strong>
+
+<ul>
+	<li>Install, configure, monitor and support databases, performing database backups, restores/refreshes.</li>
+	<li>Advise/assist developers in database design and queries best practices.</li>
+</ul>
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+			
+		</td>
+	</tr>
+
+		
+	
+		
+			
+	<tr>
+ 		<td width="25%">
+			
+			
+				<strong>
+					
+						
+						
+							Skills and Qualifications:
+						
+					
+				</strong>
+			
+		</td>
+		<td width="75%">
+	
+			
+			
+			
+			
+			
+			
+
+			
+				
+					
+
+
+
+	<strong>Competencies</strong><br>
+<br>
+Specific to Co-op Program:
+<ul>
+	<li>Dependability/Reliability</li>
+	<li>Ability to Learn</li>
+	<li>Respect</li>
+</ul>
+<br>
+Specific to Job:
+<ul>
+	<li>Problem Solving</li>
+	<li>Analytical Skills</li>
+	<li>Team Work</li>
+	<li>Client Service</li>
+	<li>Initiative</li>
+</ul>
+<br>
+<strong>Conditions of Employment</strong><br>
+<br>
+Students must be recognized as having full-time student status. Priority consideration will be given to those enrolled in an accredited co-op/internship program.<br>
+&nbsp;
+<div style="text-align: center;"><span style="color:#FF0000;"><strong>*** Note: Candidates must copy and paste the requested information (from the bottom of the page in the link provided)&nbsp;in their cover letter***</strong></span></div>
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+			
+		</td>
+	</tr>
+
+		
+	
+		
+			
+	<tr>
+ 		<td width="25%">
+			
+			
+				<strong>
+					
+						
+						
+							All Degrees and Disciplines:
+						
+					
+				</strong>
+			
+		</td>
+		<td width="75%">
+	
+			
+			
+			
+			
+			
+			
+
+			
+				
+				
+				
+				
+				
+					
+
+
+	
+		
+		
+			No
+		
+		
+	
+
+
+				
+				
+				
+				
+				
+				
+				
+
+			
+		</td>
+	</tr>
+
+		
+	
+		
+			
+	<tr>
+ 		<td width="25%">
+			
+			
+				<strong>
+					
+						
+						
+							Targeted Degrees and Disciplines:
+						
+					
+				</strong>
+			
+		</td>
+		<td width="75%">
+	
+			
+				
+
+  
+ 
+  
+
+ 
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+<div id="clustersProgramsDiv">
+	
+	
+	<div>
+		<strong>
+			Targeted Programs
+		</strong>
+	</div>
+	
+		Computer Engineering
+		<br>
+	
+		Computer Science - Co-op
+		<br>
+	
+		Computer Science - Internship
+		<br>
+	
+		Computer Security - Co-op
+		<br>
+	
+		Computer Security - Internship
+		<br>
+	
+		Digital Media - Internship
+		<br>
+	
+		Electrical Engineering
+		<br>
+	
+		Software Engineering
+		<br>
+	
+		Space Engineering
+		<br>
+	
+</div>
+			
+			
+			
+			
+			
+			
+
+			
+		</td>
+	</tr>
+
+		
+	
+		
+			
+	<tr>
+ 		<td width="25%">
+			
+			
+				<strong>
+					
+						
+						
+							Salary:
+						
+					
+				</strong>
+			
+		</td>
+		<td width="75%">
+	
+			
+			
+			
+			
+			
+			
+
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					Salary Not Available, 40.0 hours per week
+				
+				
+
+			
+		</td>
+	</tr>
+
+		
+	
+		
+			
+	<tr>
+ 		<td width="25%">
+			
+			
+				<strong>
+					
+						
+						
+							Salary Range:
+						
+					
+				</strong>
+			
+		</td>
+		<td width="75%">
+	
+			
+			
+			
+			
+			
+			
+
+			
+				
+					
+
+
+
+	n/a
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+			
+		</td>
+	</tr>
+
+		
+	
+		
+			
+	<tr>
+ 		<td width="25%">
+			
+			
+				<strong>
+					
+						
+						
+							Duration:
+						
+					
+				</strong>
+			
+		</td>
+		<td width="75%">
+	
+			
+			
+			
+			
+			
+			
+
+			
+				
+				
+				
+				
+				
+					
+
+
+	
+		
+		
+		
+			4, 8, 12 or 16 Months
+		
+	
+
+
+				
+				
+				
+				
+				
+				
+				
+
+			
+		</td>
+	</tr>
+
+		
+	
+		
+			
+	<tr>
+ 		<td width="25%">
+			
+			
+				<strong>
+					
+						
+						
+							Start Date:
+						
+					
+				</strong>
+			
+		</td>
+		<td width="75%">
+	
+			
+			
+			
+			
+			
+			
+
+			
+				
+				
+				
+					
+
+01/21/2020
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+			
+		</td>
+	</tr>
+
+		
+	
+		
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+
+
+	
+  </tbody>
+</table>
+									
+
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											
+										
+									
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+									
+									
+										<table class="table table-bordered">
+	<thead>
+		<tr class="orbisTableHeader">
+			<th colspan="2">Application Information</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td width="25%"><strong>Application Deadline:</strong></td>
+			<td>Feb 19, 2020 11:59 PM</td>
+		</tr>
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+					
+	<tr>
+ 		<td width="25%">
+			
+			
+				<strong>
+					
+						
+						
+							Application Procedure:
+						
+					
+				</strong>
+			
+		</td>
+		<td width="75%">
+	
+			
+			
+			
+			
+			
+			
+
+			
+				
+				
+				
+				
+				
+					
+
+
+
+	By Website
+
+				
+				
+				
+				
+				
+				
+				
+
+			
+		</td>
+	</tr>
+
+			
+		
+			
+					
+			
+		
+			
+					
+	<tr>
+ 		<td width="25%">
+			
+			
+				<strong>
+					
+						
+						
+							By Website, go to:
+						
+					
+				</strong>
+			
+		</td>
+		<td width="75%">
+	
+			
+			
+			
+			
+			
+			
+
+			
+				
+					
+
+
+
+	https://www.canada.ca/en/security-intelligence-service/corporate/csis-jobs/student-opportunities/student-co-op-computer-science-engineering-information-technology.html
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+			
+		</td>
+	</tr>
+
+			
+		
+			
+					
+	<tr>
+ 		<td width="25%">
+			
+			
+				<strong>
+					
+						
+						
+							Application Documents Required:
+						
+					
+				</strong>
+			
+		</td>
+		<td width="75%">
+	
+			
+			
+			
+			
+			
+			
+				Cover Letter,Resume,Transcript
+			
+
+			
+		</td>
+	</tr>
+
+			
+		
+			
+		
+		
+	</tbody>
+</table>
+									
+									
+										
+											
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+									
+										<table class="table table-bordered">
+<thead>
+<tr class="orbisTableHeader">
+<th colspan="2">
+Company Info
+</th>
+</tr>
+</thead>
+<tbody>
+		
+				
+				
+	<tr>
+ 		<td width="25%">
+			
+			
+				<strong>
+					
+						
+						
+							Organization:
+						
+					
+				</strong>
+			
+		</td>
+		<td width="75%">
+	
+			
+			
+			
+			
+				Canadian Security Intelligence Service
+			
+			
+			
+
+			
+		</td>
+	</tr>
+
+			
+		
+			
+		
+				
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+				
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+				
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		</tbody>
+		</table>
+
+									
+									
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+												
+											
+										
+										
+											<table class="table table-bordered">
+  <thead>
+    <tr class="orbisTableHeader">
+      <th colspan="2">
+       PEO Information
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+	<tr>
+ 		<td width="25%">
+			
+			
+				<strong>
+					
+						
+						
+							Is this position under a P.Eng.:
+						
+					
+				</strong>
+			
+		</td>
+		<td width="75%">
+	
+			
+			
+			
+			
+			
+			
+
+			
+				
+				
+				
+				
+				
+					
+
+
+
+	Unknown
+
+				
+				
+				
+				
+				
+				
+				
+
+			
+		</td>
+	</tr>
+				
+			
+		
+  </tbody>
+</table>
+									
+
+									
+								</div>
+							</div>
+							<div class="span4">
+								<div style="text-align: center">
+									
+
+
+
+
+
+								</div>
+								
+
+								
+
+								
+								
+								
+									
+
+
+<div class="orbis-posting-actions">
+	<div style="text-align: center">
+		<a href="javascript:void(0)" class="btn btn-primary" onclick="orbisApp.buildForm({action:&#39;printPostingStudentView&#39;,postingId:&#39;9671&#39;}).submit()">Print</a>
+	</div>
+</div>
+
+
+	<div class="orbis-posting-actions">
+		<div style="text-align: center">
+			<form enctype="multipart/form-data" id="tabMyApplication" method="post">
+	<input type="hidden" name="action" value="displayApply"> <input type="hidden" name="postingId" value="9671">
+</form>
+<form enctype="multipart/form-data" id="otherApplication" method="post">
+	<input type="hidden" name="action" value="apply"> <input type="hidden" name="postingId" value="9671">
+		<input type="hidden" name="expressedIntention" value="true">
+</form>
+
+
+	
+
+
+<form enctype="multipart/form-data" id="backToSearchResultsForm" method="post">
+	<input type="hidden" name="action" value="searchNonGrid"> <input type="hidden" name="npfGroup" value="">
+</form>
+<form enctype="multipart/form-data" id="advancedSearch" method="post">
+	<input type="hidden" name="action" value="displayAdvancedSearch">
+</form>
+
+	
+		
+			<a href="javascript:void(0);" class="btn btn-large btn-primary" id="applyButton" onclick="$(&#39;#tabMyApplication&#39;).submit()">
+				Apply for this Position
+			</a>
+		
+		
+	
+
+
+
+<ul class="pager">
+	
+	
+	<li><a href="javascript:void(0);" onclick="$(&#39;#advancedSearch&#39;).submit()">
+			New Search
+		</a></li>
+</ul>
+
+
+
+
+		</div>
+	</div>
+
+
+<div class="orbis-posting-actions">
+	<strong>TAGS</strong><br>
+	
+	
+	
+	
+	
+	
+	
+
+  
+ 
+  
+
+ 
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+
+
+
+<div class="smallfont">
+	
+	
+		
+		
+			<span class="label label-inverse">Deadline in 1 day(s)
+</span>
+		
+	
+	
+	
+		<span class="label">Viewed</span>
+	
+	
+	
+</div>
+</div>
+
+
+
+
+								
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- endtext -->
+
+			</div>
+		</div>
+		<br><br><br><br><br><br><br><br>
+	</div>
+	<div class="orbisFooter">
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span7">
+					©
+					2020
+					Lassonde School of Engineering | York University - Orbis Career / Co-op Portal Professional v3
+				</div>
+				<div class="span5 pull-right">
+					<div class="footerlink">
+						
+							
+								<div class="pull-right">
+									<a href="https://lassondecoop.com/myAccount">MyAccount</a>
+									&nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://lassondecoop.com/logout.htm"> Log
+										Out </a>
+								</div>
+							
+							
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</body></html>

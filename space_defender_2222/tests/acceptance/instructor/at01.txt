@@ -1,0 +1,8 @@
+play(10,30,2,2,2,2,2)
+toggle_debug_mode
+setup_next(5)
+fire
+fire
+move(A,1)
+fire
+fire

@@ -1,0 +1,47 @@
+bank_v1
+	- Bad design
+	- The notion of "valid states" of account objects (i.e., positive balance) 
+		is not reflected, hence the constructor Account can accept 
+		negative initial balance.
+	- The notion of "valid inputs" of withdraw operation is not reflected,
+		hence the method may be invoked even if
+			+ the withdraw amount is illegal (negative) 
+			+ the context object (i.e., tom) has its current balance not affordable
+				for the intended withdrawal.
+bank_v2
+	- Compared with Version 1, preconditions are added.
+	- But still Bad design
+	- The notion of preconditions (i.e., circumstances under which 
+	  the operation is supposed to start) is negated using exception conditions.
+	- What if the precondition is not strong enough to guarantee the preservation of
+	  invariant? This means we should always explicitly check that an object
+	  maintains its valid state before and after a method call to it. 
+bank_v3
+	- Compared wit Version 2, class invariants are added.
+	- Still bad design
+	- The assertion (concerning about the valid state of an Account object) 
+		that we put in the Account class does not appear in the public interface
+		of its potential users.
+	- Also you need to repeat this assertion in the last line of every mutator method.
+	- It's not consistent: before preconditions are negated and encoded as exceptions.
+		Now invariants are directly encoded as assertions without being negated.
+bank_v4
+	- Compared with Version 3, we changed the implementation of withdraw
+		such that it does something incorrect, but this is not caught by any 
+		exceptions (preconditions) or assertions (invariants).
+	- Still bad design
+	- In the previous 3 versions, we talk about the validity of inputs and account states.
+	- But what if the inputs are valid, but the method is implemented in such a way that
+		it still satisfies the invariant? For example, the implementor accidentally put + rather than -.
+bank_v5
+	- Compared with Version 4, we added a postcondition (assertion) in withdraw.
+	- You can now see things get quite complicated
+	- Again the assertion (concerning about the correct deduction from withdraw) 
+		that we put in Account does not appear in the public interface of its
+		potential users.
+bank_v6
+	- Added another level of complication (a collection of accounts)
+	- Asserting just that the account (sunhye) that we intend to withdraw has been deducted
+		is not sufficient. W wrong implementation may modify other accounts.
+	- We should assert that all other accounts remain intact.  
+	
