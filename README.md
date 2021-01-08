@@ -1,6 +1,34 @@
-<<<<<<< HEAD
-# EECS3311
-=======
+# Space Defender
+
+### Background
+Many years have passed since the first battle between the creatures of the Void and humankind. Time changes everything. With the research branch at work, the current iteration of Starfighter feature customizable parts for weapons, armour and engine, allowing for specialization based on the battlefield. In addition, salvaged parts (orbment and focus) from the enemy units have allowed for development of special abilities for Starfighters. The countless engagements with the enemy monsters allowed for a better understanding of them. So far, five different types of enemy units have been discovered. First is the generic Grunt. Next is the improved version of a Grunt, the Fighter. We have the large Carrier which releases a torrent of drones known as Interceptor. The Interceptor’s goal is to simply absorb projectile damage, serving as a shield to other units. Finally, a massive structure called Pylon which heals surrounding units. The enemy units appear to behave differently based on how the Starfighter acts and whether they see the Starfighter or not.
+
+
+### How to run it
+- Download the zip folder
+     
+- get into the folder   
+  ```
+    $ cd space_defender_2
+  ```
+- compile the project.  
+  ```
+    $ estudio space_defender_2.ecf &            
+  ```
+- execute the generated code in Interactive Mode  
+  ```
+    $ EIFGENs/space_defender_2/W_code/space_defender_2 -i
+  ```
+    
+    
+    
+### How to play it
+- Initial state
+
+
+
+
+
 0. See this tutorial video to get started:
 
 	https://www.youtube.com/watch?v=pjXjlPNpb5c&list=PL5dxAmCmjv_5q9wBFXV-M4S4VbB1T0EJg&index=9
