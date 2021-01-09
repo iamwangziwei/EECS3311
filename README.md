@@ -129,8 +129,27 @@ spawned earliest to latest.
 - **Interceptor**, Health:50, Regen:0, Armour:0, Vision:5.
 - **Pylon**, Health:300, Regen:0, Armour:0, Vision:5.
 
-
-
+### How to calculate the score
+  - Scoring Components
+    * A Grunt, on destruction, drops a silver orb worth 2 points. A Fighter drops a gold orb worth 3 points. An Interceptor drops a bronze orb worth 1 point.
+    * Focuses are containers of orbments and if they are full, a score multiplier is applied to the sum of the score of the orbments the focus is holding.
+      - A Carrier drops a diamond focus which has a gold orb in the first slot. A diamond focus has the capacity of 4 orbments and if it is full, a ×3 (triple) score multiplier is applied to the sum of the score of the 4 orbments.
+      - A Pylon drops a platinum focus which has a bronze orb in the first slot. A platinum focus has the capacity of 3 orbments and if it is full, a ×2 (double) score multiplier is applied to the sum of the score of the 3 orbments.
+      - A Starfighter has its own focus that has unlimited capacity (hence there is not a multiplier). Orbments obtained from destroying other enemies are added to it.
+  - Combining Scoring Components
+    * In order to add an orbment to a focus (whose capacity may or may not be fixed), traverses, from left to right, as follows:
+      - If the current slot contains an orb, then skip (as an orbment cannot be added to an orb) and move on to the next slot.
+      - If the current slot contains a focus where you can add an orbment, then add it there; otherwise, skip and move on to the next slot.
+      - If the current slot is empty/unfilled, then add it there.
+    * Whenever an enemy is destroyed, add the dropped orbment to the Starfighter’s focus, by applying the above traversal.
+    
+  - Calculating Scores
+    * To calculate the score, traverse the Starfighter’s focus:
+      - Orbs are worth the flat amounts as mentioned above.
+      - The score of a focus is the sum of the score of each orbment in the focus. If every slot in that focus is occupied (even by another focus that is not itself full), apply the score multiplier to the sum of the score of each orbment in the focus.
+    * There is no need to worry about integer overflow.
+    * Score is not preserved between games.
+      
 ### Let's play!
 
 - **Initial state**
