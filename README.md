@@ -122,24 +122,59 @@ the last projectile is spawned to the bottom-right of the Starfighter. For examp
 spawned earliest to latest.
 - **Orbital Strike**: All enemies take 100 damage, reduced by their armour value. Suppose an enemy has 15 armour, they will take 85 (i.e., 100 - 15) damage. The order of taking damage is from enemies that spawned earliest to latest.
 
+### Enemy Types
+- **Grunt**, Health:100, Regen:1, Armour:1, Vision:5.
+- **Fighter**, Health:150, Regen:5, Armour:10, Vision:10.
+- **Carrier**, Health:200, Regen:10, Armour:15, Vision:15.
+- **Interceptor**, Health:50, Regen:0, Armour:0, Vision:5.
+- **Pylon**, Health:300, Regen:0, Armour:0, Vision:5.
 
 
 
+### Let's play!
+
+- **Initial state**
+<img width="780" alt="Screen Shot 2021-01-07 at 9 26 06 PM" src="https://user-images.githubusercontent.com/35870166/104082506-bda53600-5204-11eb-99ec-d52792546428.png">  
 
 
+- **Invoke the** ***play*** **command***
 
-- Initial state
-<img width="780" alt="Screen Shot 2021-01-07 at 9 26 06 PM" src="https://user-images.githubusercontent.com/35870166/104082506-bda53600-5204-11eb-99ec-d52792546428.png">
+  <img width="831" alt="Screen Shot 2021-01-08 at 11 06 09 PM" src="https://user-images.githubusercontent.com/35870166/104082697-1b864d80-5206-11eb-8926-b93d8991d1a5.png">    
 
-- Invoke the **play** command, . 
- 
+- **select the weapon using** ***setup_select()***
+<img width="829" alt="Screen Shot 2021-01-08 at 11 37 39 PM" src="https://user-images.githubusercontent.com/35870166/104083167-80dc3d80-520a-11eb-9ea0-ad5b694ff4c0.png">    
 
-  <img width="831" alt="Screen Shot 2021-01-08 at 11 06 09 PM" src="https://user-images.githubusercontent.com/35870166/104082697-1b864d80-5206-11eb-8926-b93d8991d1a5.png">
+- **go to next stage using** ***setup_next()***
+<img width="778" alt="Screen Shot 2021-01-08 at 11 38 16 PM" src="https://user-images.githubusercontent.com/35870166/104083177-96516780-520a-11eb-9a2e-e01aafb7c77f.png">
 
-- 
+- **select the armour**
+<img width="748" alt="Screen Shot 2021-01-08 at 11 39 12 PM" src="https://user-images.githubusercontent.com/35870166/104083190-b7b25380-520a-11eb-9ad2-61c2b57cd4db.png">    
+
+- **go to next stage**
+<img width="749" alt="Screen Shot 2021-01-08 at 11 39 45 PM" src="https://user-images.githubusercontent.com/35870166/104083205-cb5dba00-520a-11eb-84d7-0b3bf664e59b.png">    
 
 
+- **select the engine**
+<img width="750" alt="Screen Shot 2021-01-08 at 11 40 57 PM" src="https://user-images.githubusercontent.com/35870166/104083222-f5af7780-520a-11eb-80d9-7e231c510ab7.png">    
 
+- **go to next stage**
+<img width="1019" alt="Screen Shot 2021-01-08 at 11 41 29 PM" src="https://user-images.githubusercontent.com/35870166/104083237-095ade00-520b-11eb-9301-21e09664d932.png">   
+
+- **select special power**
+<img width="1030" alt="Screen Shot 2021-01-08 at 11 42 19 PM" src="https://user-images.githubusercontent.com/35870166/104083254-28597000-520b-11eb-9feb-bc0b67b480c1.png">      
+
+- **go to next stage**
+<img width="901" alt="Screen Shot 2021-01-08 at 11 42 55 PM" src="https://user-images.githubusercontent.com/35870166/104083265-3c9d6d00-520b-11eb-867f-3eef3a16fe19.png">    
+
+- **enter the game mode**
+<img width="1010" alt="Screen Shot 2021-01-08 at 11 43 33 PM" src="https://user-images.githubusercontent.com/35870166/104083279-5343c400-520b-11eb-81d3-446aa3cc1819.png">    
+
+- **use** ***move, fire, pass, special*** **to kill as many enemy as you can!**
+<img width="1156" alt="Screen Shot 2021-01-08 at 11 50 17 PM" src="https://user-images.githubusercontent.com/35870166/104083408-48d5fa00-520c-11eb-8922-28945f46d97b.png">
+<img width="1160" alt="Screen Shot 2021-01-08 at 11 51 17 PM" src="https://user-images.githubusercontent.com/35870166/104083426-686d2280-520c-11eb-9f70-c35b0f82503d.png">
+<img width="1162" alt="Screen Shot 2021-01-08 at 11 52 16 PM" src="https://user-images.githubusercontent.com/35870166/104083448-8c306880-520c-11eb-8fef-26f66f860c36.png">
+<img width="1159" alt="Screen Shot 2021-01-08 at 11 52 52 PM" src="https://user-images.githubusercontent.com/35870166/104083454-a10cfc00-520c-11eb-93c4-af3a03c745fb.png">
+<img width="1158" alt="Screen Shot 2021-01-08 at 11 53 23 PM" src="https://user-images.githubusercontent.com/35870166/104083461-b3873580-520c-11eb-843c-c64868c49ccb.png">
 
 
 
