@@ -84,25 +84,46 @@ exclusive), then nothing is spawned.
 - X : This symbol means the location is where the Starfighter was destroyed. This symbol is only present when the game is over due to destruction of the Starfighter.       
 
 #### Starfighter’s attribute
-- Health: It represents the maximum integrity of the entity (e.g., Starfighter, Grunt), also known as the total health. An entity’s current health value has the lower bound of 0 and upper bound of this maximum Health value. If the current health falls to 0, the entity is destroyed. Note that in the game, for the Starfighter only, it is possible for its current health value to exceed this maximum Health value by using a power.
+- **Health**: It represents the maximum integrity of the entity (e.g., Starfighter, Grunt), also known as the total health. An entity’s current health value has the lower bound of 0 and upper bound of this maximum Health value. If the current health falls to 0, the entity is destroyed. Note that in the game, for the Starfighter only, it is possible for its current health value to exceed this maximum Health value by using a power.
  are three ways for exiting the setup stage: abort, setup back before the weapon state, or setup next beyond the
 9
-- Energy: It represents the maximum energy of the Starfighter, also known as the total energy. Note that the current energy cannot exceed total energy (with the exception of using a power). Energy is required for the Starfighter to move, to use a power, or to fire projectiles.
-- Regen (for regeneration): There are two numbers.
-⋄ The first number represents the amount of current health the Starfighter gains per turn passively
-(health regeneration). Recall that the current health cannot exceed total health, so regeneration
-only works up to the total health value (except with the use of a power).
-⋄ The second number is for energy regeneration and it works the same way as health (with respect
-to the Energy value above).
+- **Energy**: It represents the maximum energy of the Starfighter, also known as the total energy. Note that the current energy cannot exceed total energy (with the exception of using a power). Energy is required for the Starfighter to move, to use a power, or to fire projectiles.
+- **Regen**    (for regeneration):   
+There are two numbers.The first number represents the amount of current health the Starfighter gains per turn passively
+(health regeneration). 
 Note. Regen is the base value for the (health or energy) regeneration process to take place.
-- Armour: If the Starfighter and a projectile collide, the damage done to the Starfighter is the projectile’s damage minus the Starfighter’s armour. Armour does not have any cancelling effect on collisions with non-projectiles.
-- Vision: It represents how many spaces away, on the board, the Starfighter can see from its current location.
+- **Armour**: If the Starfighter and a projectile collide, the damage done to the Starfighter is the projectile’s damage minus the Starfighter’s armour. Armour does not have any cancelling effect on collisions with non-projectiles.
+- **Vision**: It represents how many spaces away, on the board, the Starfighter can see from its current location.
 For example, if the Starfighter is in [D,1], in normal mode, to see what entity is in [C,3], you need a vision of 3 (1 vertical + 2 horizontal) or more. Spaces beyond the range of the Starfighter’s vision are known to be in the fog of war and, in normal mode, are represented by a ? symbol on the board output.
 Note that in debug mode, the fog of war is not displayed on the board output.
-- Move: It represents how many spaces away the Starfighter can move from its current location (assuming it has enough energy). The distance calculation is the same as vision calculation: vertical distance plus
+- **Move**: It represents how many spaces away the Starfighter can move from its current location (assuming it has enough energy). The distance calculation is the same as vision calculation: vertical distance plus
 horizontal distance in terms of spaces.
-- Move Cost: It represents how many energy unit it takes for the Starfighter to move 1 space. If the
+- **Move Cost**: It represents how many energy unit it takes for the Starfighter to move 1 space. If the
 move cost is 5 and we make a move from [A,1] to [D,3], it would cost 25 energy units: 5 spaces (3 vertical + 2 horizontal) × 5.
+
+
+### Weapon Types
+- **Standard**: One projectile is spawned. It appears to the right of the Starfighter. For example, if the Starfighter is at [A,2], the projectile appears at [A,3]. Every subsequent turn after, the projectile moves 5 units to the right.
+- **Spread**: Three projectiles are spawned:
+  * The first one is spawned to the top-right of the Starfighter, the second to the right of the Starfighter while
+the last projectile is spawned to the bottom-right of the Starfighter. For example:
+  * If the Starfighter is at [D,4], the projectiles appear at [C,5], [D,5] and [E,5] in that order.
+  * Every subsequent turn after, the projectiles move 1 unit in the direction where they spawned relative to the Starfighter when it fired. 
+
+- **Snipe**: One projectile is spawned. It appears to the right of the Starfighter. For example, if the Starfighter is at [A,2], the projectile appears at [A,3]. Every subsequent turn after, the projectile moves 8 units to the right.
+-  **Rocket**: Two projectiles are spawned. The first one is spawned to the top-left of the Starfighter while the second projectile is spawned to the bottom-left of the Starfighter. 
+- **Splitter**: One projectile is spawned. It appears to the right of the Starfighter. For example, if the Starfighter is at [A,2], the projectile appears at [A,3]. The projectile does not move.
+
+### Special Power Types
+- **Recall**: When you start a game, the Starfighter spawns in a certain location. When this special is used, teleport the Starfighter to that location.
+- **Repair**: Increase current health by 50 units.
+- **Overcharge**: This is to sacrifice current health for gaining current energy. This is dependent on the amount of the current health spent. It will use up to 50 current health as long as the Starfighter is not destroyed to convert to current energy. The conversion is: 1 current health for 2 current energy.
+- **Deploy Drones**: Clears out all the projectiles on the board. The order of removal is from projectiles that
+spawned earliest to latest.
+- **Orbital Strike**: All enemies take 100 damage, reduced by their armour value. Suppose an enemy has 15 armour, they will take 85 (i.e., 100 - 15) damage. The order of taking damage is from enemies that spawned earliest to latest.
+
+
+
 
 
 
